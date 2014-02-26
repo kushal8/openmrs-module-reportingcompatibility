@@ -73,15 +73,15 @@ public class DWRCohortBuilderService {
 		return ps;
 	}
 	
-	public Cohort getResultCombineWithAnd() {
+	public Cohort getResultCombineWithAnd(EvaluationContext context) {
 		CohortSearchHistory history = getMySearchHistory();
-		Cohort ps = history.getPatientSetCombineWithAnd(new EvaluationContext());
+		Cohort ps = history.getPatientSetCombineWithAnd(context);
 		return ps;
 	}
 	
-	public Cohort getResultCombineWithOr() {
+	public Cohort getResultCombineWithOr(EvaluationContext context) {
 		CohortSearchHistory history = getMySearchHistory();
-		Cohort ps = history.getPatientSetCombineWithOr(new EvaluationContext());
+		Cohort ps = history.getPatientSetCombineWithOr(context);
 		return ps;
 	}
 	
